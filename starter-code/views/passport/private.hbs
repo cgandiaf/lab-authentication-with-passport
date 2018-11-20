@@ -7,3 +7,19 @@
     <a href="/">Index</a>
   </div>
 {{/if}}
+
+{{#ifEqual(user.role,0)}}
+<a href="/signup"><button>Create a new employee</button></a>
+{{/ifEqual}}
+
+{{!-- {{#if user.role '0'}}
+<a href="/signup"><button>Sign Up</button></a>
+{{/if }} --}}
+
+<p>Debería estar oculto si no estás logeado</p>
+
+<a href="/private">Private Page</a>
+{{!-- {{#if display}} --}}
+
+{{!-- {{/if}} --}}
+<a href="/logout">Logout</a>
